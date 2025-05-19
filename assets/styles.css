@@ -1,0 +1,258 @@
+/* assets/style.css */
+.fade-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'RobotoCondensed', monospace;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Headings in primary text color */
+}
+
+p {
+    color: #ffffff; /* Secondary text color for paragraphs */
+}
+
+button {
+    background-color: #FF6F61; /* Accent color for buttons */
+    color: #1c1c1c; /* Dark text on buttons */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #EB5757; /* Slightly darker coral on hover */
+}
+
+.slider-mark-text {
+    color: #A9A9A9; /* Secondary text color for slider marks */
+}
+
+.dropdown {
+    background-color: #333333; /* Dropdown background */
+    color: #000000; /* Dropdown text color */
+    border: 1px solid #333333;
+}
+
+.dropdown:hover {
+    border-color: #FF6F61; /* Accent color on hover */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #1c1c1c;
+    width: 0;
+    animation: typing 6s steps(60, end) forwards; /* Slower animation */
+    text-align: center;
+  }
+  
+  .typed-text-delay {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #1c1c1c;
+    width: 0;
+    animation: typing 6s steps(60, end) forwards;
+    animation-delay: 3s; /* Delayed animation */
+    text-align: center;
+  }
+
+.center-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fade-enter-active {
+    opacity: 1;
+}
+
+.rc-slider-track {
+    background-color: red !important;
+}
+.rc-slider-handle {
+    border-color: red !important;
+    background-color: red !important;
+}
+
+.rc-slider-dot {
+    background-color: red !important; /* milestone dots */
+    border-color: red !important;
+}
+
+.rc-slider-mark-text {
+    color: rgb(62, 62, 62) !important;
+}
+
+/* Sidebar styling */
+.sidebar-header {
+    color: #00FFC6; /* Primary text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #181818; /* Slightly darker than #1c1c1c */
+    color: #A9A9A9; /* Secondary text color */
+}
+
+.sidebar a {
+    color: #A9A9A9; /* Link color */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #00FFC6; /* Highlight color on hover */
+}
+
+.sidebar hr {
+    border-color: #333333; /* Divider color */
+}
+
+/* styles.css */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #00FFC6, 0 0 10px #00FFC6; }
+    50% { text-shadow: 0 0 15px #00FFC6, 0 0 30px #00FFC6; }
+    100% { text-shadow: 0 0 5px #00FFC6, 0 0 10px #00FFC6; }
+  }
+  
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #00FFC6; 
+    background: none; 
+}
+
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out, glow 2s infinite;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .explore-button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00FFC6;
+    color: #121212;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .explore-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00FFC6, 0 0 30px #00FFC6;
+  }
+
+  .home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+.nav-card {
+  background-color: #333333; /* Darker gray background */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+
+/* Outer menu container */
+.Select-menu-outer {
+  background-color: #333 !important;
+  color: #00FFC6 !important;
+}
+
+/* Each dropdown option */
+.Select-option {
+  background-color: #333 !important;
+  color: #00FFC6 !important;
+}
+
+/* Option on hover */
+.Select-option.is-focused {
+  background-color: #444 !important;
+  color: #00FFC6 !important;
+}
+
+/* Currently selected option */
+.Select-option.is-selected {
+  background-color: #555 !important;
+  color: #00FFC6 !important;
+}
+
+/* Selected value in the control box */
+.Select-value-label {
+  color: #00FFC6 !important;
+}
+
+/* The control itself (dropdown input area) */
+.Select-control {
+  background-color: #333 !important;
+  border-color: #555 !important;
+}
